@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ghent-schools/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ghent-schools/static/js/main.659fbf05.chunk.js",
+    "main.js.map": "/ghent-schools/static/js/main.659fbf05.chunk.js.map",
+    "runtime-main.js": "/ghent-schools/static/js/runtime-main.5d914b28.js",
+    "runtime-main.js.map": "/ghent-schools/static/js/runtime-main.5d914b28.js.map",
+    "static/js/2.1aa05370.chunk.js": "/ghent-schools/static/js/2.1aa05370.chunk.js",
+    "static/js/2.1aa05370.chunk.js.map": "/ghent-schools/static/js/2.1aa05370.chunk.js.map",
+    "index.html": "/ghent-schools/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/ghent-schools/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.1aa05370.chunk.js.LICENSE.txt": "/ghent-schools/static/js/2.1aa05370.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d914b28.js",
+    "static/js/2.1aa05370.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.659fbf05.chunk.js"
+  ]
+}
