@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import SchoolMap from './components/Map';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SchoolMap />
   </React.StrictMode>,
   document.getElementById('root')
 );
