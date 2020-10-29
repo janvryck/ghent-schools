@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { LoadScript, GoogleMap } from '@react-google-maps/api';
 import { fetchPrimarySchools, fetchSecondarySchools } from '../api'
 import School from './School';
+import User from './User';
 
 const API_KEY = 'AIzaSyDptcJHsG8CNtBplM4mL-SJPeOGdZMAS_Y';
-const CENTER = {
+const GHENT_CENTER = {
     lat: 51.049,
     lng: 3.733
 };
@@ -13,7 +14,7 @@ const CONTAINER_STYLE = {
     height: '100vh'
 };
 
-const SchoolMap = () => {
+const Map = ({locationEnabled}) => {
     const [primarySchools, setPrimarySchools] = useState([]);
     const [secondarySchools, setSecondarySchools] = useState([]);
 
@@ -25,7 +26,7 @@ const SchoolMap = () => {
     return (<LoadScript googleMapsApiKey={API_KEY}>
         <GoogleMap
             mapContainerStyle={CONTAINER_STYLE}
-            center={CENTER}
+            center={GHENT_CENTER}
             zoom={13}>
             {
                 primarySchools
@@ -49,8 +50,9 @@ const SchoolMap = () => {
                     })
                     .map((point, idx) => <School key={idx} point={point} />)
             }
+            {locationEnabled ? <User /> : <></>}
         </GoogleMap>
     </LoadScript>)
 }
 
-export default SchoolMap;
+export default Map;
